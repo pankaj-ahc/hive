@@ -32,6 +32,11 @@
     <title>
       Property &mdash; Free Bootstrap 5 Website Template by Untree.co
     </title>
+    <style>
+      #tns1-ow > button {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div class="site-mobile-menu site-navbar-target">
@@ -53,7 +58,7 @@
               class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
             >
               <li><a href="index.html">Home</a></li>
-              <li class="has-children">
+              <li class="has-children active">
                 <a href="properties.html">Properties</a>
                 <ul class="dropdown">
                   <li><a href="#">Buy Property</a></li>
@@ -70,7 +75,7 @@
               </li>
               <li><a href="services.html">Services</a></li>
               <li><a href="about.html">About</a></li>
-              <li class="active"><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
 
             <a
@@ -94,7 +99,6 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-9 text-center mt-5">
             <h1 class="heading" data-aos="fade-up">
-              5232 California AVE. 21BC
             </h1>
 
             <nav
@@ -111,7 +115,6 @@
                   class="breadcrumb-item active text-white-50"
                   aria-current="page"
                 >
-                  5232 California AVE. 21BC
                 </li>
               </ol>
             </nav>
@@ -122,63 +125,8 @@
 
     <div class="section">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-7">
-            <div class="img-property-slide-wrap">
-              <div class="img-property-slide">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
-                <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <h2 class="heading text-primary">5232 California Ave. 21BC</h2>
-            <p class="meta">California, United States</p>
-            <p class="text-black-50">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-              laborum quo quos omnis sed magnam id, ducimus saepe, debitis error
-              earum, iste dicta odio est sint dolorem magni animi tenetur.
-            </p>
-            <p class="text-black-50">
-              Perferendis eligendi reprehenderit, assumenda molestias nisi eius
-              iste reiciendis porro tenetur in, repudiandae amet libero.
-              Doloremque, reprehenderit cupiditate error laudantium qui, esse
-              quam debitis, eum cumque perferendis, illum harum expedita.
-            </p>
-
-            <div class="d-block agent-box p-5">
-              <div class="img mb-4">
-                <img
-                  src="images/person_2-min.jpg"
-                  alt="Image"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="text">
-                <h3 class="mb-0">Alicia Huston</h3>
-                <div class="meta mb-3">Real Estate</div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione laborum quo quos omnis sed magnam id ducimus saepe
-                </p>
-                <ul class="list-unstyled social dark-hover d-flex">
-                  <li class="me-1">
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                  <li class="me-1">
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li class="me-1">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li class="me-1">
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="row justify-content-between" id="propertyDetails">
+          <!-- Content will be dynamically inserted here -->
         </div>
       </div>
     </div>
@@ -200,5 +148,97 @@
     <script src="js/navbar.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+    // Add this before your other script imports
+    async function loadPropertyDetails() {
+      try {
+        // Get project ID from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('id');
+        
+        if (!projectId) {
+          throw new Error('No project ID specified');
+        }
+
+        // Fetch projects data
+        const response = await fetch('data/projects.json');
+        const data = await response.json();
+        
+        // Search in both residential and commercial arrays
+        const project = [...data.residential, ...data.commercial]
+          .find(p => p.id === projectId);
+        
+        if (!project) {
+          throw new Error('Project not found');
+        }
+
+        // Update page title and breadcrumb
+        document.querySelector('.heading').textContent = project.name;
+        document.querySelector('.breadcrumb-item.active').textContent = project.name;
+
+        // Construct the HTML for property details
+        const propertyHTML = `
+          <div class="col-lg-7">
+            <div class="img-property-slide-wrap">
+              <div class="img-property-slide">
+                ${project.images.map(img => `
+                  <img src="${img}" alt="${project.name}" class="img-fluid" />
+                `).join('')}
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2 class="heading text-primary">${project.name}</h2>
+            <p class="meta">${project.location.sector}, ${project.location.city}, ${project.location.state}</p>
+            <p class="text-black-50">${project.description}</p>
+
+            <div class="d-block agent-box p-5">
+              <div class="img mb-4">
+                <img src="${project.agent.image}" alt="${project.agent.name}" class="img-fluid" />
+              </div>
+              <div class="text">
+                <h3 class="mb-0">${project.agent.name}</h3>
+                <div class="meta mb-3">${project.agent.role}</div>
+                <p>${project.agent.description}</p>
+                <ul class="list-unstyled social dark-hover d-flex">
+                  ${Object.entries(project.agent.social).map(([platform, link]) => `
+                    <li class="me-1">
+                      <a href="${link}"><span class="icon-${platform}"></span></a>
+                    </li>
+                  `).join('')}
+                </ul>
+              </div>
+            </div>
+          </div>
+        `;
+
+        // Insert the HTML into the page
+        document.getElementById('propertyDetails').innerHTML = propertyHTML;
+
+        // Initialize the image slider (assuming you're using tiny-slider)
+        let propertySlider = new tns({
+          container: '.img-property-slide',
+          mode: 'carousel',
+          speed: 700,
+          autoplay: true,
+          controls: false,
+          nav: true
+        });
+
+      } catch (error) {
+        console.error('Error loading property details:', error);
+        document.getElementById('propertyDetails').innerHTML = `
+          <div class="col-12 text-center">
+            <h2>Error loading property details</h2>
+            <p>${error.message}</p>
+          </div>
+        `;
+      }
+    }
+
+    // Call the function when the page loads
+    document.addEventListener('DOMContentLoaded', loadPropertyDetails);
+    </script>
   </body>
 </html>

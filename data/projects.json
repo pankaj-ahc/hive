@@ -1,0 +1,934 @@
+{
+  "residential": [
+    {
+      "id": "sig-daxin-vitas",
+      "name": "Signature Global Daxin Vitas",
+      "location": {
+        "sector": "Sector TBD",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Premium residential development by Signature Global offering modern living spaces with world-class amenities.",
+      "shortDescription": "Luxury residential project with contemporary design and premium amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Rahul Kumar",
+        "role": "Senior Sales Manager",
+        "image": "images/person_1-min.jpg",
+        "description": "Experienced real estate professional specializing in luxury properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "krisumi-waterside",
+      "name": "Krisumi Waterside Residences",
+      "location": {
+        "sector": "Sector 36A",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Luxury waterfront residences offering Japanese-inspired architecture and premium living spaces with scenic views.",
+      "shortDescription": "Japanese-inspired luxury waterfront residences",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Amit Sharma",
+        "role": "Luxury Property Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialist in premium residential properties with extensive market knowledge",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "sig-titanium",
+      "name": "Signature Global Titanium SPR",
+      "location": {
+        "sector": "SPR",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Modern residential complex offering premium apartments with state-of-the-art amenities and excellent connectivity.",
+      "shortDescription": "Premium apartments with modern amenities on SPR",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Neha Gupta",
+        "role": "Property Consultant",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in residential property consulting with focus on customer satisfaction",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "adani-lushlands",
+      "name": "Adani Lushlands",
+      "location": {
+        "sector": "Gwal Pahadi",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Premium residential development by Adani offering luxurious living spaces surrounded by lush greenery.",
+      "shortDescription": "Luxury residential project in green surroundings",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Rajesh Verma",
+        "role": "Senior Property Consultant",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in luxury residential properties with focus on premium developments",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "smart-world-gems",
+      "name": "Smart World Gems",
+      "location": {
+        "sector": "Sector 89",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Modern residential development offering smart living solutions with cutting-edge amenities.",
+      "shortDescription": "Smart homes with modern amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Priya Kapoor",
+        "role": "Smart Homes Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in smart home properties with extensive technical knowledge",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "godrej-miraya",
+      "name": "Godrej Miraya",
+      "location": {
+        "sector": "Sector 43",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Luxury residential project by Godrej Properties offering premium living spaces with world-class amenities.",
+      "shortDescription": "Premium residences with luxury amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Arun Mehta",
+        "role": "Luxury Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialist in premium residential properties with focus on luxury segments",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "tulip-crimson",
+      "name": "Tulip Crimson",
+      "location": {
+        "sector": "Sector 70",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Premium residential development offering modern living spaces with excellent connectivity and lifestyle amenities.",
+      "shortDescription": "Modern residential spaces with premium amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Sanjay Kumar",
+        "role": "Property Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in residential properties with focus on customer needs",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "sig-twin-towers",
+      "name": "Signature Global Twin Towers",
+      "location": {
+        "sector": "Sector 80",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Iconic twin tower development offering luxury apartments with panoramic views and world-class amenities.",
+      "shortDescription": "Luxury apartments in iconic twin towers",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Anita Sharma",
+        "role": "Luxury Property Consultant",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in luxury residential properties with extensive market experience",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "adani-samsara-ivana",
+      "name": "Adani Samsara Ivana",
+      "location": {
+        "sector": "Sector 63",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Luxury residential project by Adani offering premium living spaces with resort-style amenities.",
+      "shortDescription": "Resort-style luxury living spaces",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Rohit Malhotra",
+        "role": "Senior Property Advisor",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in premium residential properties with focus on luxury segments",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "emar-amaris",
+      "name": "Emar Amaris",
+      "location": {
+        "sector": "Sector 62",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Premium residential development offering sophisticated living spaces with modern amenities.",
+      "shortDescription": "Sophisticated living with modern amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Deepak Verma",
+        "role": "Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in premium residential properties with customer-first approach",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "m3m-mansion",
+      "name": "M3M Mansion",
+      "location": {
+        "sector": "Sector 113",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Ultra-luxury residential project offering exclusive living spaces with bespoke amenities.",
+      "shortDescription": "Ultra-luxury living with bespoke amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Karan Singh",
+        "role": "Luxury Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in ultra-luxury properties with personalized service",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "m3m-anatalya",
+      "name": "M3M Anatalya Hills",
+      "location": {
+        "sector": "Sector 79",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Luxurious hillside residential development offering panoramic views and premium living spaces with world-class amenities.",
+      "shortDescription": "Premium hillside residences with luxury amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Vikrant Khanna",
+        "role": "Luxury Property Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in premium residential properties with focus on luxury developments",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "elan-presidential",
+      "name": "Elan The Presidential",
+      "location": {
+        "sector": "Sector 106",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Ultra-luxury residential project offering presidential-style living with exclusive amenities and premium features.",
+      "shortDescription": "Presidential-style luxury living spaces",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Ritu Sharma",
+        "role": "Premium Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in ultra-luxury properties with extensive market knowledge",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "m3m-golf-hills",
+      "name": "M3M Golf Hills",
+      "location": {
+        "sector": "Sector 79",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Premium golf-view residences offering luxury living spaces with exclusive golf course amenities and modern features.",
+      "shortDescription": "Luxury golf-view residences with premium amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Aditya Kapoor",
+        "role": "Golf Property Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in golf-view properties with focus on luxury lifestyle",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "trump-tower",
+      "name": "Trump Tower",
+      "location": {
+        "sector": "Sector 65",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Iconic Trump-branded luxury residences offering world-class amenities and exclusive living experiences.",
+      "shortDescription": "Iconic luxury residences with Trump excellence",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Rajiv Mehta",
+        "role": "Ultra-Luxury Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in ultra-luxury branded residences",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "whiteland-aspin",
+      "name": "Whiteland The Aspin",
+      "location": {
+        "sector": "Sector 76",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Premium residential development offering modern living spaces with contemporary design and lifestyle amenities.",
+      "shortDescription": "Contemporary living with premium amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Prerna Singh",
+        "role": "Property Consultant",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in modern residential properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "m3m-altitude",
+      "name": "M3M Altitude",
+      "location": {
+        "sector": "Sector 66",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "High-rise luxury development offering panoramic views and premium living spaces with modern amenities.",
+      "shortDescription": "Luxury high-rise living with panoramic views",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Arjun Malhotra",
+        "role": "Luxury Property Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in high-rise luxury properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "smartworld-edition",
+      "name": "Smartworld Edition",
+      "location": {
+        "sector": "Sector 66",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Smart residential development offering modern living spaces with cutting-edge technology and premium amenities.",
+      "shortDescription": "Smart homes with modern technology",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Nisha Patel",
+        "role": "Smart Home Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in smart home technology and modern living",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "godrej-aristocrat",
+      "name": "Godrej Aristocrat",
+      "location": {
+        "sector": "Sector 49",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Premium residential project by Godrej offering aristocratic living spaces with luxury amenities.",
+      "shortDescription": "Aristocratic living with premium features",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Suresh Kumar",
+        "role": "Premium Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in premium residential properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "dlf-privana",
+      "name": "DLF Privana",
+      "location": {
+        "sector": "Sector 77",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Exclusive residential development by DLF offering private luxury living spaces with premium amenities.",
+      "shortDescription": "Private luxury living by DLF",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Meera Reddy",
+        "role": "Luxury Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in DLF properties and luxury segments",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "dlf-arbour",
+      "name": "DLF Arbour",
+      "location": {
+        "sector": "Sector 63",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Green living concept by DLF offering nature-inspired residences with modern amenities.",
+      "shortDescription": "Nature-inspired luxury living",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Rahul Sinha",
+        "role": "Green Living Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in eco-friendly luxury properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "dlf-privana-west",
+      "name": "DLF Privana West",
+      "location": {
+        "sector": "Sector 76",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Western extension of DLF Privana offering premium living spaces with world-class amenities.",
+      "shortDescription": "Premium western extension of DLF Privana",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Anjali Mathur",
+        "role": "Senior Property Consultant",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in DLF properties with extensive market knowledge",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    }
+  ],
+  "commercial": [
+    {
+      "id": "elan-the-mark",
+      "name": "Elan The Mark",
+      "location": {
+        "sector": "Sector 106",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Premium commercial development offering state-of-the-art office spaces and retail outlets in prime location.",
+      "shortDescription": "Modern commercial complex with premium office spaces",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Priya Singh",
+        "role": "Commercial Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in commercial real estate with over 10 years of experience",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "pyramid-infinity",
+      "name": "Pyramid Infinity",
+      "location": {
+        "sector": "Sector 70",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "State-of-the-art commercial complex offering premium office spaces and retail outlets with modern infrastructure.",
+      "shortDescription": "Premium commercial spaces with modern amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Vikram Malhotra",
+        "role": "Commercial Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in commercial real estate with focus on business spaces",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "emaar-business-district",
+      "name": "Emaar Business District",
+      "location": {
+        "sector": "Sector 75A",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "World-class business district offering premium office spaces and commercial units with international standards.",
+      "shortDescription": "Premium business district with global standards",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Rajat Khanna",
+        "role": "Business Space Consultant",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in commercial real estate with focus on business districts",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "m3m-paragon",
+      "name": "M3M Paragon",
+      "location": {
+        "sector": "Sector 57",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Luxury commercial development offering high-end retail spaces and premium office environments.",
+      "shortDescription": "Premium retail and office spaces",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Amit Kapoor",
+        "role": "Commercial Space Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in luxury commercial properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "m3m-cornerwalk",
+      "name": "M3M Cornerwalk",
+      "location": {
+        "sector": "Sector 74A",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Modern retail and office complex offering prime commercial spaces with excellent connectivity.",
+      "shortDescription": "Prime retail and office complex",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Neha Gupta",
+        "role": "Retail Space Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in retail and commercial properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "m3m-jewel",
+      "name": "M3M Jewel",
+      "location": {
+        "sector": "MG Road",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Prestigious commercial development on MG Road offering premium retail and office spaces.",
+      "shortDescription": "Premium commercial spaces on MG Road",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Rohit Sharma",
+        "role": "Commercial Property Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in premium commercial properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "elan-epic",
+      "name": "Elan Epic",
+      "location": {
+        "sector": "Sector 70",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Iconic commercial development offering premium office spaces and retail outlets with modern amenities.",
+      "shortDescription": "Iconic commercial spaces with modern features",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Arun Kumar",
+        "role": "Commercial Space Consultant",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in commercial real estate with focus on premium properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "orris-market",
+      "name": "Orris Market",
+      "location": {
+        "sector": "Sector 89",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Modern retail market complex offering diverse commercial spaces with excellent facilities.",
+      "shortDescription": "Modern retail market with diverse spaces",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Sanjay Verma",
+        "role": "Retail Space Expert",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in retail market properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "elan-miracle",
+      "name": "Elan Miracle",
+      "location": {
+        "sector": "Sector 84",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Premium commercial complex offering innovative retail and office spaces with modern infrastructure.",
+      "shortDescription": "Innovative commercial spaces with modern amenities",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Ritu Verma",
+        "role": "Commercial Property Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Expert in premium commercial developments",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    },
+    {
+      "id": "elan-town-center",
+      "name": "Elan Town Center",
+      "location": {
+        "sector": "Sector 67",
+        "city": "Gurugram",
+        "state": "Haryana",
+        "country": "India"
+      },
+      "description": "Comprehensive town center offering mixed-use commercial spaces with modern amenities.",
+      "shortDescription": "Mixed-use commercial spaces in town center",
+      "images": [
+        "images/img_1.jpg",
+        "images/img_3.jpg",
+        "images/img_5.jpg"
+      ],
+      "agent": {
+        "name": "Ankit Mehta",
+        "role": "Town Center Specialist",
+        "image": "images/person_1-min.jpg",
+        "description": "Specialized in town center commercial properties",
+        "social": {
+          "instagram": "#",
+          "twitter": "#",
+          "facebook": "#",
+          "linkedin": "#"
+        }
+      }
+    }
+  ]
+}
