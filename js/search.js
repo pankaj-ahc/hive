@@ -100,7 +100,7 @@ async function initializeSearch() {
         if (resultItem) {
             const propertyId = resultItem.dataset.propertyId;
             // Navigate to property page
-            window.location.href = `/property-single.html?id=${propertyId}`;
+            window.location.href = `property-single.html?id=${propertyId}`;
         }
     });
     

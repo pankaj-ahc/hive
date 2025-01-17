@@ -1,913 +1,802 @@
-<!-- /*
-* Template Name: Property
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="favicon.png" />
 
-    <meta name="description" content="Discover your perfect home across India with Hives Real Estate" />
-    <meta name="keywords" content="bootstrap, bootstrap5" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Untree.co" />
+  <link rel="shortcut icon" href="favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="description" content="Discover your perfect home across India with Hives Real Estate" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/tiny-slider.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
-    <title>Hives - Find Your Dream Home in India</title>
-  </head>
-  <body>
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close">
-          <span class="icofont-close js-menu-toggle"></span>
-        </div>
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    #searchResults {
+      position: absolute;
+      z-index: -1;
+      background: #ffffff6b;
+      width: 100%;
+      border-radius: 28px;
+      padding: 54px 12px 12px;
+    }
+
+    #searchResults .search-result-item {
+      background: #ffffffd6;
+      margin: 2px 0;
+      padding: 3px;
+      border-radius: 12px;
+      cursor: pointer;
+      position: relative;
+      box-shadow: inset 0 0 15px 0px #a29898;
+    }
+
+    #searchResults .search-result-item:hover {
+      background: beige;
+      box-shadow: 0 2px 13px 4px darkgoldenrod, inset 0 0px 5px 0px darkgoldenrod;
+    }
+  </style>
+  <title>Hives - Find Your Dream Home in India</title>
+</head>
+
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
       </div>
-      <div class="site-mobile-menu-body"></div>
     </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
 
-    <nav class="site-nav">
-      <div class="container">
-        <div class="menu-bg-wrap">
-          <div class="site-navigation">
-            <a href="index.html" class="logo m-0 float-start">Hives</a>
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation">
+          <a href="index.html" class="logo m-0 float-start">Hives</a>
 
-            <ul
-              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
-            >
-              <li class="active"><a href="index.html">Home</a></li>
-              <li class="has-children">
-                <a href="properties.html">Properties</a>
-                <ul class="dropdown">
-                  <li><a href="#">Buy Property</a></li>
-                  <li><a href="#">Sell Property</a></li>
-                  <li class="has-children">
-                    <a href="#">Dropdown</a>
-                    <ul class="dropdown">
-                      <li><a href="#">Sub Menu One</a></li>
-                      <li><a href="#">Sub Menu Two</a></li>
-                      <li><a href="#">Sub Menu Three</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="has-children">
+              <a href="properties.html">Properties</a>
+              <ul class="dropdown">
+                <li><a href="#">Buy Property</a></li>
+                <li><a href="#">Sell Property</a></li>
+                <li class="has-children">
+                  <a href="#">Dropdown</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Sub Menu One</a></li>
+                    <li><a href="#">Sub Menu Two</a></li>
+                    <li><a href="#">Sub Menu Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
 
-            <a
-              href="#"
-              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
-              data-toggle="collapse"
-              data-target="#main-navbar"
-            >
-              <span></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div class="hero">
-      <div class="hero-slide">
-        <div
-          class="img overlay"
-          style="background-image: url('images/hero_bg_3.jpg')"
-        ></div>
-        <div
-          class="img overlay"
-          style="background-image: url('images/hero_bg_2.jpg')"
-        ></div>
-        <div
-          class="img overlay"
-          style="background-image: url('images/hero_bg_1.jpg')"
-        ></div>
-      </div>
-
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-9 text-center">
-            <h1 class="heading" data-aos="fade-up">
-              Find Your Dream Home Across India
-            </h1>
-            <form
-              action="#"
-              class="narrow-w form-search d-flex align-items-stretch mb-3 position-relative"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <input
-                type="text"
-                class="form-control px-4"
-                id="searchInput"
-                placeholder="Enter locality, city or project name"
-                autocomplete="off"
-              />
-              <button type="submit" class="btn btn-primary">Search</button>
-              
-              <!-- Add dropdown container -->
-              <div id="searchResults" class="search-results d-none">
-                <!-- Results will be populated here -->
-              </div>
-            </form>
-          </div>
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
         </div>
       </div>
     </div>
+  </nav>
 
-    <div class="section">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-lg-6">
-            <h2 class="font-weight-bold text-primary heading">
-              Popular Properties
-            </h2>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <p>
-              <a
-                href="#"
-                target="_blank"
-                class="btn btn-primary text-white py-3 px-4"
-                >View all properties</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="property-slider-wrap">
-              <div class="property-slider">
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                  </a>
+  <div class="hero">
+    <div class="hero-slide">
+      <div class="img overlay" style="background-image: url('images/hero_bg_3.jpg')"></div>
+      <div class="img overlay" style="background-image: url('images/hero_bg_2.jpg')"></div>
+      <div class="img overlay" style="background-image: url('images/hero_bg_1.jpg')"></div>
+    </div>
 
-                  <div class="property-content">
-                    <div class="price mb-2"><span>₹1.25 Cr</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50">Sector 45, Gurugram</span>
-                      <span class="city d-block mb-3">Haryana, India</span>
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-9 text-center">
+          <h1 class="heading" data-aos="fade-up">
+            Find Your Dream Home Across India
+          </h1>
+          <form action="#" class="narrow-w form-search d-flex align-items-stretch mb-3 position-relative"
+            data-aos="fade-up" data-aos-delay="200">
+            <input type="text" class="form-control px-4" id="searchInput"
+              placeholder="Enter locality, city or project name" autocomplete="off" />
+            <button type="submit" class="btn btn-primary">Search</button>
 
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">3 BHK</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 Baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-              </div>
-
-              <div
-                id="property-nav"
-                class="controls"
-                tabindex="0"
-                aria-label="Carousel Navigation"
-              >
-                <span
-                  class="prev"
-                  data-controls="prev"
-                  aria-controls="property"
-                  tabindex="-1"
-                  >Prev</span
-                >
-                <span
-                  class="next"
-                  data-controls="next"
-                  aria-controls="property"
-                  tabindex="-1"
-                  >Next</span
-                >
-              </div>
+            <!-- Add dropdown container -->
+            <div id="searchResults" class="search-results d-none">
+              <!-- Results will be populated here -->
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <section class="features-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="box-feature">
-              <span class="flaticon-house"></span>
-              <h3 class="mb-3">Premium Properties</h3>
-              <p>
-                Discover handpicked luxury properties in prime locations across major Indian cities with world-class amenities.
-              </p>
-              <p><a href="#" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-            <div class="box-feature">
-              <span class="flaticon-building"></span>
-              <h3 class="mb-3">Property Services</h3>
-              <p>
-                Complete end-to-end property services including valuation, documentation, and legal verification support.
-              </p>
-              <p><a href="#" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="box-feature">
-              <span class="flaticon-house-3"></span>
-              <h3 class="mb-3">Expert Guidance</h3>
-              <p>
-                Get personalized assistance from our RERA certified agents who understand your needs and local markets.
-              </p>
-              <p><a href="#" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-            <div class="box-feature">
-              <span class="flaticon-house-1"></span>
-              <h3 class="mb-3">Home Loans</h3>
-              <p>
-                Access competitive home loan options from leading banks with doorstep service and quick approvals.
-              </p>
-              <p><a href="#" class="learn-more">Learn More</a></p>
-            </div>
-          </div>
+  <div class="section">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="font-weight-bold text-primary heading">
+            Popular Properties
+          </h2>
         </div>
-      </div>
-    </section>
-
-    <div class="section sec-testimonials">
-      <div class="container">
-        <div class="row mb-5 align-items-center">
-          <div class="col-md-6">
-            <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
-              Customer Says
-            </h2>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <div id="testimonial-nav">
-              <span class="prev" data-controls="prev">Prev</span>
-
-              <span class="next" data-controls="next">Next</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4"></div>
-        </div>
-        <div class="testimonial-slider-wrap">
-          <div class="testimonial-slider">
-            <div class="item">
-              <div class="testimonial">
-                <img
-                  src="images/person_1-min.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle w-25 mb-4"
-                />
-                <div class="rate">
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                </div>
-                <h3 class="h5 text-primary mb-4">Rajesh Sharma</h3>
-                <blockquote>
-                  <p>
-                    &ldquo;Hives made my property search incredibly smooth. Their RERA certified agents
-                    helped me find the perfect 3BHK in Gurugram within my budget. The virtual tours
-                    saved me so much time, and their home loan assistance was invaluable.&rdquo;
-                  </p>
-                </blockquote>
-                <p class="text-black-50">IT Professional, Gurugram</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="testimonial">
-                <img
-                  src="images/person_2-min.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle w-25 mb-4"
-                />
-                <div class="rate">
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                </div>
-                <h3 class="h5 text-primary mb-4">Priya Patel</h3>
-                <blockquote>
-                  <p>
-                    &ldquo;As a first-time homebuyer, I was nervous about the process. The Hives team
-                    guided me through every step - from property selection to documentation. Their
-                    transparency and professionalism gave me complete peace of mind.&rdquo;
-                  </p>
-                </blockquote>
-                <p class="text-black-50">Software Engineer, Bangalore</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="testimonial">
-                <img
-                  src="images/person_3-min.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle w-25 mb-4"
-                />
-                <div class="rate">
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                </div>
-                <h3 class="h5 text-primary mb-4">Amit Verma</h3>
-                <blockquote>
-                  <p>
-                    &ldquo;Selling my property through Hives was a breeze. Their market analysis helped
-                    me price it right, and their professional photography made it stand out. Sold within
-                    weeks at a great price!&rdquo;
-                  </p>
-                </blockquote>
-                <p class="text-black-50">Business Owner, Mumbai</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="testimonial">
-                <img
-                  src="images/person_4-min.jpg"
-                  alt="Image"
-                  class="img-fluid rounded-circle w-25 mb-4"
-                />
-                <div class="rate">
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                  <span class="icon-star text-warning"></span>
-                </div>
-                <h3 class="h5 text-primary mb-4">Meera Krishnan</h3>
-                <blockquote>
-                  <p>
-                    &ldquo;The Hives platform is so user-friendly! I loved how I could filter properties
-                    based on my exact requirements. Their legal verification service saved me from
-                    potential property disputes. Highly recommended!&rdquo;
-                  </p>
-                </blockquote>
-                <p class="text-black-50">Senior Manager, Chennai</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section section-4 bg-light">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-lg-5">
-            <h2 class="font-weight-bold heading text-primary mb-4">
-              Your Dream Home is Just a Click Away
-            </h2>
-            <p class="text-black-50">
-              Experience hassle-free property search with Hives. Our technology-driven platform 
-              and expert team ensure you find the perfect home that matches your lifestyle.
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-between mb-5">
-          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
-            <div class="img-about dots">
-              <img src="images/hero_bg_3.jpg" alt="Image" class="img-fluid" />
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-home2"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Verified Listings</h3>
-                <p class="text-black-50">
-                  Every property on our platform is thoroughly verified for authenticity 
-                  and accurate information to ensure a safe buying experience.
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-person"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">RERA Certified Agents</h3>
-                <p class="text-black-50">
-                  Our network of professional agents is RERA certified and trained 
-                  to provide the best guidance for your property journey.
-                </p>
-              </div>
-            </div>
-
-            <div class="d-flex feature-h">
-              <span class="wrap-icon me-3">
-                <span class="icon-security"></span>
-              </span>
-              <div class="feature-text">
-                <h3 class="heading">Secure Transactions</h3>
-                <p class="text-black-50">
-                  Complete peace of mind with our secure transaction process and 
-                  thorough legal verification services.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row section-counter mt-5">
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"><span class="countup text-primary">50000</span>+</span>
-              <span class="caption text-black-50">Active Listings</span>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"><span class="countup text-primary">25000</span>+</span>
-              <span class="caption text-black-50">Successful Deals</span>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"><span class="countup text-primary">100</span>+</span>
-              <span class="caption text-black-50">Cities Present</span>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-            <div class="counter-wrap mb-5 mb-lg-0">
-              <span class="number"><span class="countup text-primary">2000</span>+</span>
-              <span class="caption text-black-50">Expert Agents</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="row justify-content-center footer-cta" data-aos="fade-up">
-        <div class="col-lg-7 mx-auto text-center">
-          <h2 class="mb-4">Join India's fastest growing real estate network</h2>
+        <div class="col-lg-6 text-lg-end">
           <p>
-            <a
-              href="#"
-              target="_blank"
-              class="btn btn-primary text-white py-3 px-4"
-              >Become a Hives Partner</a
-            >
+            <a href="#" target="_blank" class="btn btn-primary text-white py-3 px-4">View all properties</a>
           </p>
         </div>
-        <!-- /.col-lg-7 -->
       </div>
-      <!-- /.row -->
-    </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="property-slider-wrap">
+            <div class="property-slider">
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                </a>
 
-    <div class="section section-5 bg-light">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-lg-6 mb-5">
-            <h2 class="font-weight-bold heading text-primary mb-4">
-              Meet Our Expert Agents
-            </h2>
-            <p class="text-black-50">
-              Our RERA certified property experts bring years of experience and deep local market knowledge 
-              to help you make informed real estate decisions across India.
+                <div class="property-content">
+                  <div class="price mb-2"><span>₹1.25 Cr</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">Sector 45, Gurugram</span>
+                    <span class="city d-block mb-3">Haryana, India</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">3 BHK</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 Baths</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
+                    <span class="city d-block mb-3">California, USA</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
+                    <span class="city d-block mb-3">California, USA</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
+                    <span class="city d-block mb-3">California, USA</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
+                    <span class="city d-block mb-3">California, USA</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
+                    <span class="city d-block mb-3">California, USA</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
+                    <span class="city d-block mb-3">California, USA</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
+                    <span class="city d-block mb-3">California, USA</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+
+              <div class="property-item">
+                <a href="property-single.html" class="img">
+                  <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                </a>
+
+                <div class="property-content">
+                  <div class="price mb-2"><span>$1,291,000</span></div>
+                  <div>
+                    <span class="d-block mb-2 text-black-50">5232 California Fake, Ave. 21BC</span>
+                    <span class="city d-block mb-3">California, USA</span>
+
+                    <div class="specs d-flex mb-4">
+                      <span class="d-block d-flex align-items-center me-3">
+                        <span class="icon-bed me-2"></span>
+                        <span class="caption">2 beds</span>
+                      </span>
+                      <span class="d-block d-flex align-items-center">
+                        <span class="icon-bath me-2"></span>
+                        <span class="caption">2 baths</span>
+                      </span>
+                    </div>
+
+                    <a href="property-single.html" class="btn btn-primary py-2 px-3">See details</a>
+                  </div>
+                </div>
+              </div>
+              <!-- .item -->
+            </div>
+
+            <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
+              <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Prev</span>
+              <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Next</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="features-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="box-feature">
+            <span class="flaticon-house"></span>
+            <h3 class="mb-3">Premium Properties</h3>
+            <p>
+              Discover handpicked luxury properties in prime locations across major Indian cities with world-class
+              amenities.
             </p>
+            <p><a href="#" class="learn-more">Learn More</a></p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="h-100 person">
-              <img
-                src="images/person_1-min.jpg"
-                alt="Image"
-                class="img-fluid"
-              />
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="box-feature">
+            <span class="flaticon-building"></span>
+            <h3 class="mb-3">Property Services</h3>
+            <p>
+              Complete end-to-end property services including valuation, documentation, and legal verification support.
+            </p>
+            <p><a href="#" class="learn-more">Learn More</a></p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="box-feature">
+            <span class="flaticon-house-3"></span>
+            <h3 class="mb-3">Expert Guidance</h3>
+            <p>
+              Get personalized assistance from our RERA certified agents who understand your needs and local markets.
+            </p>
+            <p><a href="#" class="learn-more">Learn More</a></p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+          <div class="box-feature">
+            <span class="flaticon-house-1"></span>
+            <h3 class="mb-3">Home Loans</h3>
+            <p>
+              Access competitive home loan options from leading banks with doorstep service and quick approvals.
+            </p>
+            <p><a href="#" class="learn-more">Learn More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-              <div class="person-contents">
-                <h2 class="mb-0"><a href="#">Vikram Mehta</a></h2>
-                <span class="meta d-block mb-3">Senior Property Advisor</span>
-                <p>
-                  With 15+ years of experience in Mumbai real estate, Vikram specializes in luxury 
-                  properties and has facilitated transactions worth ₹500+ crores. RERA certified 
-                  expert in residential complexes.
-                </p>
+  <div class="section sec-testimonials">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-6">
+          <h2 class="font-weight-bold heading text-primary mb-4 mb-md-0">
+            Customer Says
+          </h2>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div id="testimonial-nav">
+            <span class="prev" data-controls="prev">Prev</span>
 
-                <ul class="social list-unstyled list-inline dark-hover">
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
+            <span class="next" data-controls="next">Next</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4"></div>
+      </div>
+      <div class="testimonial-slider-wrap">
+        <div class="testimonial-slider">
+          <div class="item">
+            <div class="testimonial">
+              <img src="images/person_1-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+              <div class="rate">
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
               </div>
+              <h3 class="h5 text-primary mb-4">Rajesh Sharma</h3>
+              <blockquote>
+                <p>
+                  &ldquo;Hives made my property search incredibly smooth. Their RERA certified agents
+                  helped me find the perfect 3BHK in Gurugram within my budget. The virtual tours
+                  saved me so much time, and their home loan assistance was invaluable.&rdquo;
+                </p>
+              </blockquote>
+              <p class="text-black-50">IT Professional, Gurugram</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="h-100 person">
-              <img
-                src="images/person_2-min.jpg"
-                alt="Image"
-                class="img-fluid"
-              />
 
-              <div class="person-contents">
-                <h2 class="mb-0"><a href="#">Priya Sharma</a></h2>
-                <span class="meta d-block mb-3">Property Investment Specialist</span>
-                <p>
-                  Priya is an expert in Bangalore's tech corridor properties. Her deep understanding 
-                  of investment opportunities has helped numerous NRI clients make profitable real 
-                  estate decisions.
-                </p>
-
-                <ul class="social list-unstyled list-inline dark-hover">
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
+          <div class="item">
+            <div class="testimonial">
+              <img src="images/person_2-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+              <div class="rate">
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
               </div>
+              <h3 class="h5 text-primary mb-4">Priya Patel</h3>
+              <blockquote>
+                <p>
+                  &ldquo;As a first-time homebuyer, I was nervous about the process. The Hives team
+                  guided me through every step - from property selection to documentation. Their
+                  transparency and professionalism gave me complete peace of mind.&rdquo;
+                </p>
+              </blockquote>
+              <p class="text-black-50">Software Engineer, Bangalore</p>
             </div>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div class="h-100 person">
-              <img
-                src="images/person_3-min.jpg"
-                alt="Image"
-                class="img-fluid"
-              />
 
-              <div class="person-contents">
-                <h2 class="mb-0"><a href="#">Rajesh Kumar</a></h2>
-                <span class="meta d-block mb-3">Commercial Property Expert</span>
-                <p>
-                  Based in Delhi-NCR, Rajesh specializes in commercial real estate and office spaces. 
-                  His portfolio includes successful deals with major IT companies and retail chains 
-                  across North India.
-                </p>
-
-                <ul class="social list-unstyled list-inline dark-hover">
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-twitter"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-linkedin"></span></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#"><span class="icon-instagram"></span></a>
-                  </li>
-                </ul>
+          <div class="item">
+            <div class="testimonial">
+              <img src="images/person_3-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+              <div class="rate">
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
               </div>
+              <h3 class="h5 text-primary mb-4">Amit Verma</h3>
+              <blockquote>
+                <p>
+                  &ldquo;Selling my property through Hives was a breeze. Their market analysis helped
+                  me price it right, and their professional photography made it stand out. Sold within
+                  weeks at a great price!&rdquo;
+                </p>
+              </blockquote>
+              <p class="text-black-50">Business Owner, Mumbai</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial">
+              <img src="images/person_4-min.jpg" alt="Image" class="img-fluid rounded-circle w-25 mb-4" />
+              <div class="rate">
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+                <span class="icon-star text-warning"></span>
+              </div>
+              <h3 class="h5 text-primary mb-4">Meera Krishnan</h3>
+              <blockquote>
+                <p>
+                  &ldquo;The Hives platform is so user-friendly! I loved how I could filter properties
+                  based on my exact requirements. Their legal verification service saved me from
+                  potential property disputes. Highly recommended!&rdquo;
+                </p>
+              </blockquote>
+              <p class="text-black-50">Senior Manager, Chennai</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="siteFooter"></div>
-    <!-- /.site-footer -->
+  <div class="section section-4 bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-5">
+          <h2 class="font-weight-bold heading text-primary mb-4">
+            Your Dream Home is Just a Click Away
+          </h2>
+          <p class="text-black-50">
+            Experience hassle-free property search with Hives. Our technology-driven platform
+            and expert team ensure you find the perfect home that matches your lifestyle.
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-between mb-5">
+        <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
+          <div class="img-about dots">
+            <img src="images/hero_bg_3.jpg" alt="Image" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex feature-h">
+            <span class="wrap-icon me-3">
+              <span class="icon-home2"></span>
+            </span>
+            <div class="feature-text">
+              <h3 class="heading">Verified Listings</h3>
+              <p class="text-black-50">
+                Every property on our platform is thoroughly verified for authenticity
+                and accurate information to ensure a safe buying experience.
+              </p>
+            </div>
+          </div>
 
-    <!-- Preloader -->
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+          <div class="d-flex feature-h">
+            <span class="wrap-icon me-3">
+              <span class="icon-person"></span>
+            </span>
+            <div class="feature-text">
+              <h3 class="heading">RERA Certified Agents</h3>
+              <p class="text-black-50">
+                Our network of professional agents is RERA certified and trained
+                to provide the best guidance for your property journey.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex feature-h">
+            <span class="wrap-icon me-3">
+              <span class="icon-security"></span>
+            </span>
+            <div class="feature-text">
+              <h3 class="heading">Secure Transactions</h3>
+              <p class="text-black-50">
+                Complete peace of mind with our secure transaction process and
+                thorough legal verification services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row section-counter mt-5">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="counter-wrap mb-5 mb-lg-0">
+            <span class="number"><span class="countup text-primary">50000</span>+</span>
+            <span class="caption text-black-50">Active Listings</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="counter-wrap mb-5 mb-lg-0">
+            <span class="number"><span class="countup text-primary">25000</span>+</span>
+            <span class="caption text-black-50">Successful Deals</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="counter-wrap mb-5 mb-lg-0">
+            <span class="number"><span class="countup text-primary">100</span>+</span>
+            <span class="caption text-black-50">Cities Present</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+          <div class="counter-wrap mb-5 mb-lg-0">
+            <span class="number"><span class="countup text-primary">2000</span>+</span>
+            <span class="caption text-black-50">Expert Agents</span>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/property-slider.js"></script>
-    <script src="js/search.js"></script>
-  </body>
+  <div class="section">
+    <div class="row justify-content-center footer-cta" data-aos="fade-up">
+      <div class="col-lg-7 mx-auto text-center">
+        <h2 class="mb-4">Join India's fastest growing real estate network</h2>
+        <p>
+          <a href="#" target="_blank" class="btn btn-primary text-white py-3 px-4">Become a Hives Partner</a>
+        </p>
+      </div>
+      <!-- /.col-lg-7 -->
+    </div>
+    <!-- /.row -->
+  </div>
+
+  <div class="section section-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-6 mb-5">
+          <h2 class="font-weight-bold heading text-primary mb-4">
+            Meet Our Expert Agents
+          </h2>
+          <p class="text-black-50">
+            Our RERA certified property experts bring years of experience and deep local market knowledge
+            to help you make informed real estate decisions across India.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="h-100 person">
+            <img src="images/person_1-min.jpg" alt="Image" class="img-fluid" />
+
+            <div class="person-contents">
+              <h2 class="mb-0"><a href="#">Vikram Mehta</a></h2>
+              <span class="meta d-block mb-3">Senior Property Advisor</span>
+              <p>
+                With 15+ years of experience in Mumbai real estate, Vikram specializes in luxury
+                properties and has facilitated transactions worth ₹500+ crores. RERA certified
+                expert in residential complexes.
+              </p>
+
+              <ul class="social list-unstyled list-inline dark-hover">
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="h-100 person">
+            <img src="images/person_2-min.jpg" alt="Image" class="img-fluid" />
+
+            <div class="person-contents">
+              <h2 class="mb-0"><a href="#">Priya Sharma</a></h2>
+              <span class="meta d-block mb-3">Property Investment Specialist</span>
+              <p>
+                Priya is an expert in Bangalore's tech corridor properties. Her deep understanding
+                of investment opportunities has helped numerous NRI clients make profitable real
+                estate decisions.
+              </p>
+
+              <ul class="social list-unstyled list-inline dark-hover">
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="h-100 person">
+            <img src="images/person_3-min.jpg" alt="Image" class="img-fluid" />
+
+            <div class="person-contents">
+              <h2 class="mb-0"><a href="#">Rajesh Kumar</a></h2>
+              <span class="meta d-block mb-3">Commercial Property Expert</span>
+              <p>
+                Based in Delhi-NCR, Rajesh specializes in commercial real estate and office spaces.
+                His portfolio includes successful deals with major IT companies and retail chains
+                across North India.
+              </p>
+
+              <ul class="social list-unstyled list-inline dark-hover">
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="siteFooter"></div>
+  <!-- /.site-footer -->
+
+  <!-- Preloader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/property-slider.js"></script>
+  <script src="js/search.js"></script>
+</body>
+
 </html>

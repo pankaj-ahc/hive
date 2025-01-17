@@ -4,8 +4,8 @@ async function loadAndRenderProperties() {
         const response = await fetch('data/projects.json');
         const data = await response.json();
         
-        // Combine residential and commercial properties
-        const allProperties = [...data.residential, ...data.commercial];
+        // Combine the first 5 residential and commercial properties
+        const allProperties = [...data.residential.slice(0, 5), ...data.commercial.slice(0, 5)];
         
         // Get the property slider container
         const propertySlider = document.querySelector('.property-slider');
@@ -67,6 +67,7 @@ function initializePropertySlider() {
             autoplay: true,
             autoplayButtonOutput: false,
             controlsContainer: '#property-nav',
+            nav: false, // Hide the index dots
             responsive: {
                 992: {
                     items: 3
