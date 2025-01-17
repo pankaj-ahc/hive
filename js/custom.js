@@ -113,11 +113,13 @@
   tinySdlier();
 
   //New Arrangments
+  fetchAndInsertHTML("module/menu.html", "siteNav").then(e=>
+	siteMenuClone())
   fetchAndInsertHTML("module/siteFooter.html", "siteFooter");
 })();
 
 function fetchAndInsertHTML(fileName, domId) {
-  fetch(fileName)
+  return fetch(fileName)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
