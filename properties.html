@@ -1,122 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Untree.co" />
-  <link rel="shortcut icon" href="favicon.png" />
+    <meta name="description" content="Browse through our extensive listings of residential and commercial properties across India. Find your perfect property today!" />
+    <meta name="keywords" content="properties for sale, residential properties, commercial properties, property listings, real estate India" />
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap5" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
-  <link rel="stylesheet" href="fonts/icomoon/style.css" />
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="css/tiny-slider.css" />
-  <link rel="stylesheet" href="css/aos.css" />
-  <link rel="stylesheet" href="css/style.css" />
+    <title>Hives - Find Your Dream Home in India</title>
+    <style>
+      .custom-pagination a.active {
+        background-color: #007bff;
+        color: white;
+      }
+    </style>
+  </head>
 
-  <title>Hives - Find Your Dream Home in India</title>
-  <style>
-    .custom-pagination a.active {
-      background-color: #007bff;
-      color: white;
-    }
-  </style>
-</head>
+  <body>
+    <div id="siteNav"></div>
 
-<body>
-  <div id="siteNav"></div>
-  
+    <div
+      class="hero page-inner overlay"
+      style="background-image: url('images/hero_bg_1.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">
+              {{ edit_1 }}
+            </h1>
 
-  <div class="hero page-inner overlay" style="background-image: url('images/hero_bg_1.jpg')">
-    <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-lg-9 text-center mt-5">
-          <h1 class="heading" data-aos="fade-up">Properties</h1>
-
-          <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
-            <ol class="breadcrumb text-center justify-content-center">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item active text-white-50" aria-current="page">
-                Properties
-              </li>
-            </ol>
-          </nav>
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  Properties
+                </li>
+              </ol>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="section">
-    <div class="container">
-      <div class="row mb-5 align-items-center">
-        <div class="col-lg-6 text-center mx-auto">
-          <h2 class="font-weight-bold text-primary heading">
-            Featured Properties
-          </h2>
+    <div class="section">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-6 text-center mx-auto">
+            <h2 class="font-weight-bold text-primary heading">
+              Featured Properties
+            </h2>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="property-slider-wrap">
-            <div class="property-slider" id="featuredProperties">
-              <!-- Dynamic properties will be inserted here -->
-            </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="property-slider-wrap">
+              <div class="property-slider" id="featuredProperties">
+                <!-- Dynamic properties will be inserted here -->
+              </div>
 
-            <div id="property-nav" class="controls" tabindex="0" aria-label="Carousel Navigation">
-              <span class="prev" data-controls="prev" aria-controls="property" tabindex="-1">Prev</span>
-              <span class="next" data-controls="next" aria-controls="property" tabindex="-1">Next</span>
+              <div
+                id="property-nav"
+                class="controls"
+                tabindex="0"
+                aria-label="Carousel Navigation"
+              >
+                <span
+                  class="prev"
+                  data-controls="prev"
+                  aria-controls="property"
+                  tabindex="-1"
+                  >Prev</span
+                >
+                <span
+                  class="next"
+                  data-controls="next"
+                  aria-controls="property"
+                  tabindex="-1"
+                  >Next</span
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="section section-properties">
-    <div class="container">
-      <div class="row" id="allProperties">
-        <!-- Dynamic properties will be inserted here -->
-      </div>
-      <div class="row align-items-center py-5">
-        <div class="col-lg-3" id="paginationInfo">Pagination (1 of 10)</div>
-        <div class="col-lg-6 text-center">
-          <div class="custom-pagination" id="pagination">
-            <!-- Pagination will be inserted here -->
+    <div class="section section-properties">      
+      <div class="container">
+        <div class="row text-center mb-3">
+          <h1 data-aos="fade-up">
+            All <span class="heading" ></span>
+          </h1>
+        </div>
+        <div class="row" id="allProperties">
+          <!-- Dynamic properties will be inserted here -->
+        </div>
+        <div class="row align-items-center py-5">
+          <div class="col-lg-3" id="paginationInfo">Pagination (1 of 10)</div>
+          <div class="col-lg-6 text-center">
+            <div class="custom-pagination" id="pagination">
+              <!-- Pagination will be inserted here -->
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="siteFooter"></div>
-  <!-- /.site-footer -->
+    <div id="siteFooter"></div>
+    <!-- /.site-footer -->
 
-  <!-- Preloader -->
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border" role="status">
-      <span class="visually-hidden">Loading...</span>
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
     </div>
-  </div>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/tiny-slider.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/counter.js"></script>
-  <script src="js/custom.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
 
-  <script>
-    // Function to create a property card HTML
-    function createPropertyCard(property) {
-      return `
+    <script>
+      // Function to create a property card HTML
+      function createPropertyCard(property) {
+        return `
           <div class="property-item">
             <a href="property-single.html?id=${property.id}" class="img">
               <img src="${property.images[0]}" alt="Image" class="img-fluid">
@@ -140,100 +175,137 @@
             </div>
           </div>
         `;
-    }
+      }
 
-    let allProperties = []; // Store properties globally
-    const itemsPerPage = 9;
+      let allProperties = []; // Store properties globally
+      const itemsPerPage = 9;
 
-    async function loadProperties(page = 1) {
-      try {
-        if (allProperties.length === 0) {
-          // Only fetch data if we haven't already
-          const response = await fetch('data/projects.json');
-          const data = await response.json();
-          allProperties = [...data.residential, ...data.commercial];
-        }
+      async function loadProperties(page = 1) {
+        try {
+          if (allProperties.length === 0) {
+            // Get project ID from URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectType = urlParams.get("type");
 
-        // Populate featured properties slider (only on first load)
-        if (page === 1) {
-          const featuredPropertiesHTML = allProperties
-            .slice(0, 10)
-            .map(property => createPropertyCard(property))
-            .join('');
-          document.getElementById('featuredProperties').innerHTML = featuredPropertiesHTML;
-
-          // Initialize slider
-          if (typeof tns !== 'undefined') {
-            tns({
-              container: '.property-slider',
-              items: 1,
-              slideBy: 'page',
-              autoplay: false,
-              mouseDrag: true,
-              gutter: 30,
-              nav: false,
-              controls: true,
-              controlsContainer: '#property-nav',
-              responsive: {
-                0: { items: 1 },
-                992: { items: 2 },
-                1200: { items: 3 }
-              }
-            });
+            // Only fetch data if we haven't already
+            const response = await fetch("data/projects.json");
+            const data = await response.json();
+            switch (projectType) {
+              case "residential":
+                allProperties = [...data.residential];
+                break;
+              case "commercial":
+                allProperties = [...data.commercial];
+                break;
+              default:
+                allProperties = [...data.residential, ...data.commercial];
+                break;
+            }
           }
-        }
 
-        // Calculate pagination
-        const startIndex = (page - 1) * itemsPerPage;
-        const endIndex = startIndex + itemsPerPage;
-        const totalPages = Math.ceil(allProperties.length / itemsPerPage);
+          // Populate featured properties slider (only on first load)
+          if (page === 1) {
+            const featuredPropertiesHTML = allProperties
+              .slice(0, 10)
+              .map((property) => createPropertyCard(property))
+              .join("");
+            document.getElementById("featuredProperties").innerHTML =
+              featuredPropertiesHTML;
 
-        // Update properties grid
-        const allPropertiesHTML = allProperties
-          .slice(startIndex, endIndex)
-          .map(property => `
+            // Initialize slider
+            if (typeof tns !== "undefined") {
+              tns({
+                container: ".property-slider",
+                items: 1,
+                slideBy: "page",
+                autoplay: false,
+                mouseDrag: true,
+                gutter: 30,
+                nav: false,
+                controls: true,
+                controlsContainer: "#property-nav",
+                responsive: {
+                  0: { items: 1 },
+                  992: { items: 2 },
+                  1200: { items: 3 },
+                },
+              });
+            }
+          }
+
+          // Calculate pagination
+          const startIndex = (page - 1) * itemsPerPage;
+          const endIndex = startIndex + itemsPerPage;
+          const totalPages = Math.ceil(allProperties.length / itemsPerPage);
+
+          // Update properties grid
+          const allPropertiesHTML = allProperties
+            .slice(startIndex, endIndex)
+            .map(
+              (property) => `
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
                 ${createPropertyCard(property)}
               </div>
-            `)
-          .join('');
-        document.getElementById('allProperties').innerHTML = allPropertiesHTML;
+            `
+            )
+            .join("");
+          document.getElementById("allProperties").innerHTML =
+            allPropertiesHTML;
 
-        // Update pagination info
-        document.getElementById('paginationInfo').textContent =
-          `Pagination (${page} of ${totalPages})`;
+          // Update pagination info
+          document.getElementById(
+            "paginationInfo"
+          ).textContent = `Pagination (${page} of ${totalPages})`;
 
-        // Update pagination buttons
-        const paginationHTML = Array.from({ length: totalPages }, (_, i) => i + 1)
-          .map(pageNum => `
-              <a href="#" class="${pageNum === page ? 'active' : ''}" 
+          // Update pagination buttons
+          const paginationHTML = Array.from(
+            { length: totalPages },
+            (_, i) => i + 1
+          )
+            .map(
+              (pageNum) => `
+              <a href="#" class="${pageNum === page ? "active" : ""}" 
                  data-page="${pageNum}">${pageNum}</a>
-            `)
-          .join('');
-        document.getElementById('pagination').innerHTML = paginationHTML;
+            `
+            )
+            .join("");
+          document.getElementById("pagination").innerHTML = paginationHTML;
 
-        // Scroll to top of properties section
-        if (page > 1) {
-          document.querySelector('.section-properties').scrollIntoView({ behavior: 'smooth' });
+          // Scroll to top of properties section
+          if (page > 1) {
+            document
+              .querySelector(".section-properties")
+              .scrollIntoView({ behavior: "smooth" });
+          }
+        } catch (error) {
+          console.error("Error loading properties:", error);
         }
-
-      } catch (error) {
-        console.error('Error loading properties:', error);
       }
-    }
 
-    // Load initial properties when the page loads
-    document.addEventListener('DOMContentLoaded', () => loadProperties(1));
+      // Load initial properties when the page loads
+      document.addEventListener("DOMContentLoaded", () => loadProperties(1));
 
-    // Add pagination click handler
-    document.getElementById('pagination').addEventListener('click', (e) => {
-      e.preventDefault();
-      if (e.target.tagName === 'A') {
-        const page = parseInt(e.target.dataset.page);
-        loadProperties(page);
+      // Add pagination click handler
+      document.getElementById("pagination").addEventListener("click", (e) => {
+        e.preventDefault();
+        if (e.target.tagName === "A") {
+          const page = parseInt(e.target.dataset.page);
+          loadProperties(page);
+        }
+      });
+
+      // Update the heading based on type
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectType = urlParams.get("type");
+      let headingText = "Properties"; // Default heading
+      if (projectType === "residential") {
+        headingText = "Residential Properties"; // Update for residential
+      } else if (projectType === "commercial") {
+        headingText = "Commercial Properties"; // Update for commercial
       }
-    });
-  </script>
-</body>
-
+      
+      // Update the heading in the DOM
+      document.querySelectorAll(".heading").forEach(heading => heading.textContent = headingText);
+    </script>
+  </body>
 </html>

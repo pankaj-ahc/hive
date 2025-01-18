@@ -27,6 +27,7 @@ async function loadAndRenderProperties() {
                             <span class="d-block mb-2 text-black-50">${property.location.sector}, ${property.location.city}</span>
                             <span class="city d-block mb-3">${property.location.state}, ${property.location.country}</span>
 
+                            <!-- 
                             <div class="specs d-flex mb-4">
                                 <span class="d-block d-flex align-items-center me-3">
                                     <span class="icon-bed me-2"></span>
@@ -37,6 +38,7 @@ async function loadAndRenderProperties() {
                                     <span class="caption">2 Baths</span>
                                 </span>
                             </div>
+                            -->
 
                             <a href="property-single.html?id=${property.id}" 
                                class="btn btn-primary py-2 px-3">See details</a>
@@ -67,7 +69,7 @@ function initializePropertySlider() {
             autoplay: true,
             autoplayButtonOutput: false,
             controlsContainer: '#property-nav',
-            nav: false, // Hide the index dots
+            // nav: false, // Hide the index dots
             responsive: {
                 992: {
                     items: 3

@@ -105,48 +105,63 @@
             </div>
           </div>
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <form action="#">
+            <form id="contactForm" novalidate>
               <div class="row">
                 <div class="col-12 mb-3">
                   <input
                     type="text"
                     class="form-control"
+                    id="nameInput"
                     placeholder="Your Name"
+                    required
+                    minlength="5"
                   />
+                  <div class="invalid-feedback">Name must be at least 5 characters long.</div>
                 </div>                
                 <div class="col-6 mb-3">
                   <input
                     type="email"
                     class="form-control"
+                    id="emailInput"
                     placeholder="Your Email"
+                    pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}"
+                    required
                   />
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
                 <div class="col-6 mb-3">
                   <input
                     type="tel"
                     class="form-control"
+                    id="mobileInput"
                     placeholder="Mobile Number"
+                    required
+                    pattern="^[0-9]{10}$"
                   />
+                  <div class="invalid-feedback">Mobile number must be a 10-digit numeric value.</div>
                 </div>
                 
                 <div class="col-12 mb-3">
                   <textarea
-                    name=""
-                    id=""
+                    id="messageInput"
                     cols="30"
                     rows="7"
                     class="form-control"
                     placeholder="Message"
+                    required
+                    minlength="30"
                   ></textarea>
+                  <div class="invalid-feedback">Message must be at least 30 characters long.</div>
                 </div>
 
                 <div class="col-12">
                   <input
-                    type="submit"
+                    type="button"
                     value="Send Message"
                     class="btn btn-primary"
+                    id="sendMessageButton"
                   />
-                </div>
+                </div>                
               </div>
             </form>
           </div>
@@ -172,5 +187,25 @@
     <script src="js/navbar.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+      document.getElementById('sendMessageButton').addEventListener('click', function() {
+        const form = document.getElementById('contactForm');
+
+        // Check if the form is valid
+        if (form.checkValidity()) {
+          const name = document.getElementById('nameInput').value;
+          const email = document.getElementById('emailInput').value;
+          const mobile = document.getElementById('mobileInput').value;
+          const message = document.getElementById('messageInput').value;
+
+          // Call sendEmail with the input values
+          sendEmail(name, email, mobile, message);
+        } else {
+          // Trigger validation messages
+          form.classList.add('was-validated');
+        }
+      });
+    </script>
   </body>
 </html>
